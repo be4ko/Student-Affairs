@@ -4,39 +4,97 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log in</title>
+    <link rel="stylesheet" href="./StyleSheet/login.css">
   </head>
 
-  <body>
-    <img height="150" src="./logo.png" alt="">
+  <body style="margin: 0;">
 
+    <!--THe nav bar Code-->
+    <div class="navbar">
+      <img class="logo" height="120" src="./logo.png" alt="">
+      <div class="list">
+        <ul>
+          <li class="page"><a href="./main.html">Home</a></li>
+          <li class="page"><a href="./News.html">News</a></li>
+          <li style="padding-right: 29px;" class="page"><a href="./ContactUs.html">Contact Us</a></li>
 
-    <h1>User Login</h1>
-    <table>
-      <tr>
-        <td>Email:</td>
-        <td><input type="email" name="email" required></td>
-      </tr>
-      <tr>
-        <td>Password:</td>
-        <td><input type="password" name="password" required></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td><input type="submit" value="Login"></td>
-      </tr>
-    </table>
-
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2023 Stduent's Affairs. All rights reserved.</p>
-        <ul class="footer-links">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="./ContactUs.html">Contact Us</a></li>
+          <li class="Search">
+            <input style="width: 190px; border-radius: 15px; height: 39px; padding-right: 43px;" type="text"
+              name="search" placeholder="">
+          </li>
+          <li>
+            <button class="SearchButton" type="submit">
+              <a href=""> Search </a>
+            </button>
+          </li>
         </ul>
       </div>
-    </footer>
+    </div>
+
+    <!-- THe little half square in the left-->
+    <div class="square-container">
+      <div class="green-square">
+
+      </div>
+    </div>
+
+    <div class="big-login">
+      <div class="Login">
+
+        <div class="title">
+          <h1 class="h1">Sign in</h1>
+        </div>
+        <div>
+          <h4>
+            Sign in and start managing your candidates!
+          </h4>
+        </div>
+
+        <table>
+          <tr>
+            <td colspan="2">
+              <div>
+                <input type="email" name="email" class="email" placeholder=" Email" size="40" required>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <div>
+                <input class="email" type="password" name="password" placeholder="Password" size="40" required>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="checkbox">
+              <input type="checkbox" name="" id="">Remember me
+            </td>
+            <td class="forget-password">
+              Forget Password?
+            </td>
+          </tr>
+        </table>
+
+        <div>
+          <button class="button1">
+            <a href="">
+              Login
+            </a>
+          </button>
+        </div>
+
+      </div>
+      <div class="dark-container">
+        <div class="dark-square">
+        </div>
+      </div>
+    </div>
+    <!--THe Log in form Code-->
+
+
 
   </body>
 

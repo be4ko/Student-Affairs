@@ -69,12 +69,15 @@ button {
     border-radius: 150px;
     margin-right: 30px;
 }
-
-
+a{
+    color:white;
+    text-decoration: none;
+}
 
 .h1{
     font-weight: 700;
     margin:0;
+    font-size: 50px;
 }
 .title{
     font-size: 22px;
@@ -155,10 +158,13 @@ p{
 }
 
 .checkbox{
-    font-size: 20px;
+    font-size: 18px;
+    color:#224957;
 }
 .forget-password{
     float: right;
+    color:#224957;
+
 }
 
 .button1{
@@ -174,15 +180,12 @@ p{
     border-radius: 15px;
     border:none;
     justify-content: center;
-    width: 339px;
+    width: 310px;
     margin-top: 20px;
 
 }
 
-a{
-    color:white;
-    text-decoration: none;
-}
+
 
 table{
     height: 100px;

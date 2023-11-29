@@ -3,100 +3,115 @@
 
     <head>
         <title>Add Student</title>
+        <link rel="stylesheet" href="./StyleSheet/AddStudent.css">
+        <!--Goolge Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo&family=Inter&family=Lexend+Deca:wght@300&display=swap"
+            rel="stylesheet">
+        <!--Icon-->
+        <link rel="shortcut icon" href="./Images/Icon.webp" type="image/x-icon">
     </head>
 
     <body>
-        <img height="150" src="./logo.png" alt="">
-        <nav>
-            <ul>
-                <li><a href="/AddStudent.html">Add Student</a></li>
-                <li><a href="./UpdateStudent.html">Update Student</a></li>
-                <li><a href="./DeleteStudent.html">Delete Student</a></li>
-                <li><a href="./News.html">News</a></li>
-                <li>
-                    <input type="text" name="search" placeholder="Search">
-                    <button type="submit">Search</button>
-                </li>
-            </ul>
-        </nav>
-
-        <h1>Add Student</h1>
-        <form action="add_student.php" method="post">
-            <table>
-                <tr>
-                    <td>ID:</td>
-                    <td><input type="text" name="id" required></td>
-                </tr>
-                <tr>
-                    <td>Name:</td>
-                    <td><input type="text" name="name" required></td>
-                </tr>
-                <tr>
-                    <td>Date of Birth:</td>
-                    <td><input type="date" name="dob" required></td>
-                </tr>
-                <tr>
-                    <td>GPA:</td>
-                    <td><input type="number" step="0.01" name="gpa" required></td>
-                </tr>
-                <tr>
-                    <td>Gender:</td>
-                    <td>
-                        <select name="gender">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Level:</td>
-                    <td><input type="text" name="level" required></td>
-                </tr>
-                <tr>
-                    <td>Status:</td>
-                    <td>
-                        <input type="radio" name="status" value="active" checked> Active
-                        <input type="radio" name="status" value="inactive"> Inactive
-                    </td>
-                </tr>
-                <tr>
-                    <td>Department:</td>
-                    <td>
-                        <select name="department">
-                            <option value="Select Department">Select Department</option>
-                            <option value="Computer Science">Computer Science</option>
-                            <option value="Information Technology">Information Technology</option>
-                            <option value="Information System">Information System</option>
-                            <option value="Artificial Intelligence">Artificial Intelligence</option>
-                            <option value="Decision Support">Decision Support</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Email:</td>
-                    <td><input type="email" name="email" required></td>
-                </tr>
-                <tr>
-                    <td>Mobile Number:</td>
-                    <td><input type="tel" name="mobile" required></td>
-                </tr>
-            </table>
-            <br>
-            <input type="submit" value="Add Student">
-        </form>
-
-
-        <footer>
-            <div class="footer-content">
-                <p>&copy; 2023 Stduent's Affairs. All rights reserved.</p>
-                <ul class="footer-links">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="./ContactUs.html">Contact Us</a></li>
+        <div class="navbar">
+            <img class="logo" height="120" src="./logo.png" alt="">
+            <div class="list">
+                <ul>
+                    <li class="page"><a href="./Dashboard.html">Home </a></li>
+                    <li class="page"><a href="./AddStudent.html">Add Student </a></li>
+                    <li class="page"><a href="./UpdateStudent.html"> Update Student </a></li>
+                    <li class="page"><a href="./DeleteStudent.html"> Delete Student </a></li>
+                    <li class="Search">
+                        <input
+                            style="width: 190px; border-radius: 15px; height: 39px; padding-right: 61px; margin-left: 76px;"
+                            type="text" name="search" placeholder="">
+                    </li>
+                    <li>
+                        <button class="SearchButton" type="submit">
+                            <a href=""> Search </a>
+                        </button>
+                    </li>
                 </ul>
             </div>
-        </footer>
+        </div>
+
+        <div class="label">
+            <h1>
+                Adding A Student
+            </h1>
+        </div>
+
+
+        <div class="main">
+            <div class="left cairo">
+                <div class="leftA size">
+                    <ul class="list1">
+                        <li style="padding-top: 0;">Student Name</li>
+                        <li>Student ID</li>
+                        <li>Student DOB</li>
+                        <li>Student Gender</li>
+                        <li>Student Level</li>
+                    </ul>
+                </div>
+
+                <div class="leftB size">
+                    <ul class="list2">
+                        <li style="padding-top: 0;"> <input size="23" type="text"> </li>
+                        <li> <input size="23" type="number" required></li>
+                        <li> <input style="width: 190px;" size="23" type="date"> </li>
+                        <li> <select name="gender" style="width:190px; border-radius:20px; border:none; height:25px;">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </li>
+                        <li> <input size="23" type="text" required> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right cairo">
+                <div class="leftA size">
+                    <ul class="list1">
+                        <li style="padding-top: 0;">Status</li>
+                        <li>Department</li>
+                        <li>Email </li>
+                        <li>Phone Number</li>
+                    </ul>
+                </div>
+
+                <div class="leftB size">
+                    <ul class="list2">
+                        <li style="padding-top: 0; font-size:18px; text-align:center;"> <input size="23" name="activity" type="radio">
+                            Active <input size="23"  name="activity" type="radio">Inactive</li>
+                        <li> <select name="gender" style="width:190px; border-radius:20px; border:none; height:25px;">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </li>
+                        <li> <input size="23" type="text" required></li>
+                        <li> <input size="23" type="text" required> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="bottomA"></div>
+                <div class="bottomB">
+                    <button class="button1 cairo">
+                        Add Student
+                    </button>
+                </div>
+                <div class="bottomA"></div>
+
+            </div>
+
+        </div>
+
+
     </body>
 
 </html>

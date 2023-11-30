@@ -103,11 +103,12 @@ a{
     border-radius: 15px ; 
     left: 50%;
     transform: translateX(-60%) rotate(30deg);
+    margin-top: 50px;
+
 }
 
 
 .dark-container {
-    
     float: right;
     width: 127px; 
     height: 10px; 
@@ -119,88 +120,71 @@ a{
     background-color: #224957;
     border-radius: 15px ; 
     left: 50%;
-    margin-left: 211px;
-    transform:translateX(10%) rotate(30deg)
+    transform:translateX(10%) rotate(30deg);
+    margin-top: 390px;
+
 
 }
 
 .main{
     float: left;
-    height: 400px;
-    width: 1000px;
+    height: 440px;
+    width: 1050px;
     background-color: #D9D9D9 ;
     border-radius: 20px ;
-    margin: 12px 250px;
+    margin: 90px 250px;
+    margin-right: 0px;
 }
 
-.left{
-    float: left;
-    margin: 15px 30px;
-    height: 300px;
-    width: 430px;
-    margin-bottom: 0px;
-}
-.leftA{
-    float: left;
-    height: 280px;
-    width: 200px;
-}
-.list1{
-    list-style: none;
-}
-.list1 > li {
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 27px;
-    height: 25px;
-}
-.leftB{
-    margin-left: 5px;
-    float: left;
-    height: 280px;
-    width: 200px;
-}
-.list2{
-    list-style:none;
-    padding-left: 2px;
-}
-.list2 > li {
-    font-size: 18px;
-    font-weight: bold;
-    padding-top: 25px;
-}
-.list2 > li > input{
-    height: 24px;
-    border-radius: 20px;
-    border: none;
-}
-.right{
-    float: right;
-    margin: 15px 30px;
-    height: 300px;
-    width: 430px;
-    margin-right: 50px;
-    margin-bottom: 0px;
-
-}
-.bottom{
+.label{
     height: 50px;
     width: 100%;
-    float: right;
+    font-size: 30px;
+    color: #224957;
+    text-align: left;
+
 }
 
-.bottomA{
-    float: left;
-    height: 20px;
-    width: 400px;
+.label > p {
+    margin: 0;
+    padding-left: 120px;
+    font-weight: bolder;
 }
-.button1{
+
+.one{
+    height: 280px;
+    width: 320px;
+    float: left;
+    margin-left: 20px;
+}
+.onee{
+    height: 340px;
+}
+.listt{
+    list-style:none;
+    text-align: right;
+}
+
+.listt > li {
+    display: block;
+    text-align: right;
+    font-size: 24px;
+    padding-top: 15px;
+}
+.listtt{
+    float: left;
+    padding-left: 0px  ;
+}
+
+.listtt > li {
+    padding: 0 ;
+    padding-top: 10px;
+}
+
+.btn{
+    width: 100%;
     height: 40px;
-    width: 200px ;
+    background-color: #20DF7F;
     border-radius: 20px;
     border: none;
-    background-color:#20DF7F;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
 }

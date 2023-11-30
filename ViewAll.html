@@ -2,8 +2,8 @@
 <html>
 
     <head>
-        <title>Contact Us</title>
-        <link rel="stylesheet" href="./StyleSheet/ContactUs.css">
+        <title>View All</title>
+        <link rel="stylesheet" href="./StyleSheet/ViewAll.css">
         <!--Goolge Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +19,10 @@
             <img class="logo" height="120" src="./logo.png" alt="">
             <div class="list">
                 <ul>
-                    <li class="page"><a href="./index.html">Home </a></li>
-
+                    <li class="page"><a href="./Dashboard.html">Home </a></li>
+                    <li class="page"><a href="./AddStudent.html">Add Student </a></li>
+                    <li class="page"><a href="./UpdateStudent.html"> Update Student </a></li>
+                    <li class="page"><a href="./DeleteStudent.html"> Delete Student </a></li>
                     <li class="Search">
                         <input
                             style="width: 190px; border-radius: 15px; height: 39px; padding-right: 61px; margin-left: 76px;"
@@ -42,32 +44,18 @@
         </div>
 
         <div class="main">
-            <div class="label">
-                <p>Contact Us</p>
+            <div class="filter">
+                <div class="filterA fofo">
+                    Filter By: 
+                </div>
+                <div class="filterB fofo">
+                    <select class="select" name="" id="">
+                        <option value="Acive">Ative</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="one">
-                <ul class="listt">
-                    <li>Name: </li>
-                    <li>Email: </li>
-                    <li>Message: </li>
-                </ul>
-            </div>
-            <div class="one onee">
-                <ul class="listt listtt">
-                    <li> <input style="height: 25px; border-radius:20px; border:none ;" size="30" type="text"> </li>
-                    <li> <input style="height: 25px; border-radius:20px; border:none ;" size="30" type="text"> </li>
-                    <li> <input style="height: 180px; width:229px; border-radius:20px; border:none ;" size="30" type="text"> </li>
-
-                    <li><button class="btn">
-                        Send message
-                    </button></li>
-
-                </ul>
-            </div>
-            <div class="one">
-                
-            </div>
         </div>
 
         <div class="dark-container">

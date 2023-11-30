@@ -1,3 +1,4 @@
+// this code below for the slide Box
 let slideIndex = 1;
 showSlides(slideIndex);
 

@@ -38,7 +38,7 @@
         </div>
 
         <div class="label">
-            <h1>
+            <h1 id="error">
                 Adding A Student
             </h1>
         </div>
@@ -48,7 +48,7 @@
             <div class="green-square"></div>
         </div>
 
-        <div class="main">
+        <form method="get" id="form" class="main">
             <div class="left cairo">
                 <div class="leftA size">
                     <ul class="list1">
@@ -62,16 +62,17 @@
 
                 <div class="leftB size">
                     <ul class="list2">
-                        <li style="padding-top: 0;"> <input size="23" type="text"> </li>
-                        <li> <input size="23" type="number" required></li>
-                        <li> <input style="width: 190px;" size="23" type="date"> </li>
-                        <li> <select name="gender" style="width:190px; border-radius:20px; border:none; height:25px;">
+                        <li style="padding-top: 0;"> <input id="studentName" size="23" type="text"> </li>
+                        <li> <input id="studentID" size="23" type="number"></li>
+                        <li> <input id="studentDOB" style="width: 190px;" size="23" type="date"> </li>
+                        <li> <select id="studentGender" name="gender"
+                                style="width:190px; border-radius:20px; border:none; height:25px;">
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                                 <option value="other">Other</option>
                             </select>
                         </li>
-                        <li> <input size="23" type="text" required> </li>
+                        <li> <input id="studentLevel" size="23" type="text"> </li>
                     </ul>
                 </div>
             </div>
@@ -88,30 +89,33 @@
 
                 <div class="leftB size">
                     <ul class="list2">
-                        <li style="padding-top: 0; font-size:18px; text-align:center;"> <input size="23" name="activity"
-                                type="radio">
+                        <li style="padding-top: 0; font-size:18px; text-align:center;"> <input id="studentActivity"
+                                size="23" name="activity" type="radio">
                             Active <input size="23" name="activity" type="radio">Inactive</li>
-                        <li> <select name="gender" style="width:190px; border-radius:20px; border:none; height:25px;">
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="other">Other</option>
+                        <li> <select id="studentDep" name="gender"
+                                style="width:190px; border-radius:20px; border:none; height:25px;">
+                                <option value="CS">Computer science </option>
+                                <option value="IT">Information Techology</option>
+                                <option value="IS">Information System</option>
+                                <option value="DS">Decision Support</option>
+                                <option value="AI">Artificial Intelligence</option>
                             </select>
                         </li>
-                        <li> <input size="23" type="text" required></li>
-                        <li> <input size="23" type="text" required> </li>
+                        <li> <input id="studentEmail" size="23" type="text"></li>
+                        <li> <input id="studentPhone" size="23" type="text"></li>
                     </ul>
                 </div>
             </div>
             <div class="dark-container">
                 <div class="dark-square">
-                    
+
                 </div>
             </div>
 
             <div class="bottom">
                 <div class="bottomA"></div>
                 <div class="bottomB">
-                    <button class="button1 cairo">
+                    <button class="button1 cairo" type="submit">
                         Add Student
                     </button>
                 </div>
@@ -119,9 +123,9 @@
 
             </div>
 
-        </div>
+        </form>
 
-
+    <script src="./Script/AddStudent.js"></script>
     </body>
 
 </html>

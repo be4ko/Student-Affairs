@@ -43,20 +43,21 @@
       <div class="green-square"></div>
     </div>
 
-    <div class="big-login">
-      <div class="Login">
+    <div class="big-login" >
+      <form action="/Dashboard.html" method="get"  class="Login" id="form">
+
         <div class="title">
-          <h1 class="h1">Sign in</h1>
+          <h1 class="h1" >Sign in</h1>
         </div>
         <div>
-          <h4>Sign in and start managing your candidates!</h4>
+          <h4 id="error">Sign in and start managing your candidates!</h4>
         </div>
-
+        
         <table>
           <tr>
             <td colspan="2">
               <div>
-                <input type="email" name="email" class="email" placeholder=" Email" size="40" required />
+                <input  class="email" id="email" type="email" name="email" placeholder=" Email" size="40"  />
               </div>
             </td>
           </tr>
@@ -64,30 +65,30 @@
           <tr>
             <td colspan="2">
               <div>
-                <input class="email" type="password" name="password" placeholder="Password" size="40" required />
+                <input class="email" id="password" type="password" name="password" placeholder=" Password" size="40"  />
               </div>
             </td>
           </tr>
 
           <tr>
             <td class="checkbox">
-              <input type="checkbox" name="" id="" />Remember me
+              <input type="checkbox" name="remember" />Remember me
             </td>
             <td class="forget-password">Forget Password?</td>
           </tr>
         </table>
 
         <div>
-          <button class="button1">
-            <a href="./Dashboard.html"> Login </a>
+          <button class="button1" id="button1" type="submit">
+            Login 
           </button>
         </div>
-      </div>
+      </form>
       <div class="dark-container">
         <div class="dark-square"></div>
       </div>
     </div>
-    <!--THe Log in form Code-->
+    <script src="./Script/login.js"></script>
   </body>
 
 </html>
